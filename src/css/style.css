@@ -1,0 +1,39 @@
+.parallax {
+  background-image: url("https://source.unsplash.com/1600x900/?industry,factory");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.poetsen {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tema {
+  background-image: linear-gradient(to right, #a8e063, #56ab2f);
+
+  /* Standar dan WebKit-prefixed */
+  background-clip: text; /* Standard */
+  -webkit-background-clip: text; /* WebKit-specific */
+
+  /* Bikin teks transparan agar gradasi kelihatan */
+  color: transparent; /* Standard fallback */
+  -webkit-text-fill-color: transparent; /* WebKit-specific */
+}
