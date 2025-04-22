@@ -81,3 +81,25 @@ form.addEventListener("submit", function (e) {
 //       JSON.stringify({ status: 'success', message: 'Data berhasil disimpan!' })
 //     ).setMimeType(ContentService.MimeType.JSON);
 //   }
+
+//darkmode
+const toggle = document.getElementById("dark-toggle");
+
+// Cek localStorage saat pertama kali
+if (localStorage.theme === "dark") {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
+
+// Fungsi toggle
+toggle.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+
+  // Simpan preferensi
+  if (document.documentElement.classList.contains("dark")) {
+    localStorage.theme = "dark";
+  } else {
+    localStorage.theme = "light";
+  }
+});

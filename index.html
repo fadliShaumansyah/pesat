@@ -6,9 +6,8 @@
     <title>PESAT Incenerator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="./outut.css" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
     <link href="src/css/style.css" rel="stylesheet" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
       rel="stylesheet"
@@ -31,6 +30,7 @@
         d="M0,224L34.3,192C68.6,160,137,96,206,85.3C274.3,75,343,117,411,128C480,139,549,117,617,122.7C685.7,128,754,160,823,154.7C891.4,149,960,107,1029,101.3C1097.1,96,1166,128,1234,138.7C1302.9,149,1371,139,1406,133.3L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
       ></path>
     </svg>
+
     <!--whatsapp butoon-->
     <a
       href="https://wa.me/6282318725426?text=Halo,%20saya%20tertarik%20dengan%20produk%20inceneratornya%20bisa%20jelaskan%20lebih%20lanjut%20?"
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <div class="relative -mt-20 bg-gray-900">
+    <div class="relative -mt-20 bg-gray-900 dark:bg-gray-300">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -133,7 +133,9 @@
     </div>
 
     <!-- COMPANY PROFILE -->
-    <section class="bg-gray-900 px-6 py-20 text-center">
+    <section
+      class="bg-gray-900 px-6 py-20 text-center dark:bg-gray-300 dark:text-black"
+    >
       <h2 class="text-3xl md:text-4xl font-semibold mb-6" data-aos="fade-up">
         Company Profile
       </h2>
@@ -151,7 +153,7 @@
     </section>
 
     <!-- tag line -->
-    <section class="bg-gray-800 px-6 py-20">
+    <section class="bg-gray-800 px-6 py-20 dark:bg-white dark:text-black">
       <h2
         class="text-3xl md:text-4xl font-semibold text-center mb-12"
         data-aos="fade-up"
@@ -159,19 +161,28 @@
         We Are The Best
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <div class="bg-gray-700 p-6 rounded-xl shadow-md" data-aos="fade-right">
+        <div
+          class="bg-gray-700 dark:bg-gray-200 p-6 rounded-xl shadow-md"
+          data-aos="fade-right"
+        >
           <h3 class="text-2xl font-bold mb-2">Produk Anak Bangsa</h3>
           <p>
             High-performance industrial incinerator for heavy-duty applications.
           </p>
         </div>
-        <div class="bg-gray-700 p-6 rounded-xl shadow-md" data-aos="fade-up">
+        <div
+          class="bg-gray-700 p-6 rounded-xl shadow-md dark:bg-gray-200"
+          data-aos="fade-up "
+        >
           <h3 class="text-2xl font-bold mb-2">Kualitas Terbaik</h3>
           <p>
             Eco-friendly incineration with low emissions and high efficiency.
           </p>
         </div>
-        <div class="bg-gray-700 p-6 rounded-xl shadow-md" data-aos="fade-left">
+        <div
+          class="bg-gray-700 p-6 rounded-xl shadow-md dark:bg-gray-200"
+          data-aos="fade-left"
+        >
           <h3 class="text-2xl font-bold mb-2">Efektif & Efisien</h3>
           <p>Portable solution for field operations and rapid deployments.</p>
         </div>
@@ -809,9 +820,9 @@
     </section>
 
     <!-- CONTACT FORM -->
-    <section class="bg-gray-900 px-6 py-20">
+    <section class="bg-gray-900 px-6 py-20 dark:bg-gray-300">
       <h2
-        class="text-3xl md:text-4xl font-semibold text-center mb-10"
+        class="text-3xl md:text-4xl font-semibold text-center mb-10 dark:text-black"
         data-aos="fade-up"
       >
         Contact Us
@@ -826,20 +837,20 @@
           type="text"
           name="name"
           placeholder="Name"
-          class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+          class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 dark:bg-white"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
-          class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+          class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 dark:bg-white"
           required
         />
         <textarea
           name="message"
           placeholder="Your Message"
-          class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600"
+          class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 dark:bg-white"
           rows="5"
           required
         ></textarea>
@@ -853,12 +864,14 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-700 text-white px-6 py-12">
+    <footer
+      class="bg-gray-700 text-white px-6 py-12 dark:bg-white dark:text-black"
+    >
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Logo dan Deskripsi -->
         <div>
           <h3 class="text-2xl font-bold mb-4">PESAT Incinerator</h3>
-          <p class="text-sm text-gray-400">
+          <p class="text-sm dark:text-black text-gray-300">
             Solusi inovatif untuk pengolahan sampah industri yang efisien dan
             ramah lingkungan.
           </p>
@@ -867,7 +880,7 @@
         <!-- Navigasi -->
         <div>
           <h4 class="text-xl font-semibold mb-4">Navigasi</h4>
-          <ul class="space-y-2 text-sm text-gray-300">
+          <ul class="space-y-2 text-sm text-gray-300 dark:text-black">
             <li><a href="#hero" class="hover:text-white">Beranda</a></li>
             <li>
               <a href="#profile" class="hover:text-white">Profil Perusahaan</a>
@@ -880,7 +893,7 @@
         <!-- Kontak -->
         <div>
           <h4 class="text-xl font-semibold mb-4">Kontak</h4>
-          <ul class="space-y-2 text-sm text-gray-300">
+          <ul class="space-y-2 text-sm text-gray-300 dark:text-black">
             <li>📍 Bojongmalaka, Kabupaten Bandung</li>
             <li>📱 0823-1872-5426</li>
             <li>📧 pesatincinerator@gmail.com</li>
@@ -893,7 +906,7 @@
           <div class="flex space-x-4">
             <a
               href="#"
-              class="text-gray-400 hover:text-white"
+              class="text-gray-400 hover:text-white dark:hover:text-black"
               aria-label="Facebook"
             >
               <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -928,11 +941,17 @@
               </svg>
             </a>
           </div>
+          <button
+            id="dark-toggle"
+            class="mt-4 px-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-gray-700 transition"
+          >
+            🌙
+          </button>
         </div>
       </div>
 
       <div
-        class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-500"
+        class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-500 dark:text-black"
       >
         &copy; 2025 PESAT Incinerator. All rights reserved.
       </div>
